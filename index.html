@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+        <h1 id = "titulo">Cadastro de Usuario </h1>
+        <p id ="subtitulo">Preencha os campos a baixo:</p>
+        <br>
+    </div>
+    <form >
+        <fieldset class ="grupo">
+            <div class="campos">
+                <label for="Nome">Nome</label>
+                <input type ="text" name="Nome" id = "Nome "required>
+            </div>
+            <div class="campos">
+                <label >Sobrenome</label>
+                <input type ="text" name="Sobrenome" id = "Sobrenome "required>
+            </div>
+            <div class="campos">
+                <label for="Email" >Email</label>
+                <input type ="email" name="email" id = "email"required>
+            </div>
+            <div class="campos">
+                <label >Qual o seu Genêro:</label>
+                <br>
+                <label for = "Genêro">
+                    <input type="radio" name = "Masculino" value = "Homem">Masculino
+             <br>
+                    <input type="radio" name = "Femino" value = "Mulher">Feminino
+               <br>
+                    <input type="radio" name = "Lgbt" value = "LGBTQIA+">Lgbtqia+
+                </label>
+            </div>
+            <div class="campos">
+                <label for="Região">Região</label>
+                <select>
+                    <option selected disabled ="">Escolha</option>
+                    <option>Centro-Oeste</option>
+                    <option>Nordeste</option>
+                    <option>Norte</option>
+                    <option>Sudeste</option>
+                    <option>Sul</option>
+                </select>                
+                <br>
+                <p>Insira sua data de nascimento : </p>
+                <div class="campos"></div>
+                <label for="data" >
+                    <input type="date" name ="Data" id ="Idade">
+                </label>
+            </div>
+            </div>
+
+        </fieldset>
+        <button type = "submit" id ="button">Concluido</button>
+    </form>
+</body>
+</html>
